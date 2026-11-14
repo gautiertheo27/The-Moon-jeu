@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="THE MOON">
+  <title>THE MOON</title>
+  <defs>
+    <radialGradient id="lune" cx="40%" cy="34%" r="70%">
+      <stop offset="0" stop-color="#c7c4bb"/>
+      <stop offset=".55" stop-color="#8e8b84"/>
+      <stop offset="1" stop-color="#4f4e4b"/>
+    </radialGradient>
+    <linearGradient id="propre" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e9f7ff"/>
+      <stop offset=".5" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#bfe9ff"/>
+    </linearGradient>
+    <clipPath id="disque"><circle cx="64" cy="64" r="54"/></clipPath>
+  </defs>
+  <!-- orbite orange sécurité -->
+  <circle cx="64" cy="64" r="61" fill="none" stroke="#ff7a1a" stroke-width="3" stroke-dasharray="250 40 12 40" transform="rotate(-62 64 64)"/>
+  <circle cx="64" cy="64" r="54" fill="url(#lune)"/>
+  <g clip-path="url(#disque)">
+    <!-- cratères poussiéreux -->
+    <g fill="#5c5a55" opacity=".75">
+      <circle cx="38" cy="40" r="9"/><circle cx="86" cy="92" r="11"/><circle cx="92" cy="40" r="5"/>
+      <circle cx="30" cy="84" r="6"/><circle cx="60" cy="100" r="4"/><circle cx="100" cy="66" r="3.5"/>
+    </g>
+    <g fill="none" stroke="#d6d3ca" stroke-width="1.5" opacity=".55">
+      <path d="M31 36a9 9 0 0 1 13-2"/><path d="M78 86a11 11 0 0 1 16-2"/><path d="M89 37a5 5 0 0 1 6 0"/>
+    </g>
+    <!-- la trace propre brossée en diagonale -->
+    <g transform="rotate(-38 64 64)">
+      <rect x="-10" y="50" width="148" height="26" fill="url(#propre)"/>
+      <g stroke="#9fdcff" stroke-width="1.1" opacity=".75">
+        <path d="M-10 55h148M-10 60.5h148M-10 66h148M-10 71.5h148"/>
+      </g>
+      <g fill="#6f6c66">
+        <circle cx="8" cy="48.5" r="1.4"/><circle cx="22" cy="47.6" r="1"/><circle cx="40" cy="48.8" r="1.6"/>
+        <circle cx="58" cy="47.8" r="1.1"/><circle cx="76" cy="48.6" r="1.5"/><circle cx="96" cy="47.7" r="1"/>
+        <circle cx="14" cy="77.6" r="1.1"/><circle cx="34" cy="78.4" r="1.5"/><circle cx="52" cy="77.5" r="1"/>
+        <circle cx="70" cy="78.5" r="1.4"/><circle cx="88" cy="77.6" r="1.1"/><circle cx="110" cy="78.3" r="1.5"/>
+      </g>
+    </g>
+  </g>
+  <circle cx="64" cy="64" r="54" fill="none" stroke="#0b0e14" stroke-opacity=".35" stroke-width="2"/>
+  <!-- la brosse à dents en fin de trace -->
+  <g transform="translate(101 35) rotate(-38)">
+    <rect x="-4" y="-4" width="36" height="8" rx="4" fill="#ff7a1a" stroke="#0b0e14" stroke-width="2"/>
+    <rect x="-22" y="-5" width="20" height="10" rx="3" fill="#f4f2ea" stroke="#0b0e14" stroke-width="2"/>
+    <path d="M-19 5v8M-14 5v9M-9 5v9M-4.5 5v8" stroke="#5fc8ff" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+  <!-- éclat -->
+  <path d="M30 96l2.2 6.8 6.8 2.2-6.8 2.2L30 114l-2.2-6.8-6.8-2.2 6.8-2.2z" fill="#ffffff"/>
+</svg>
